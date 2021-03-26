@@ -24,9 +24,8 @@ function App() {
     const { THREE } = window;
     const scene = new THREE.Scene();
 
-    // const light = new THREE.DirectionalLight('#ffffff', 0.5);
-    // light.position.set(-20, 50, 100);
-    // scene.add(light);
+    const hLight = new THREE.HemisphereLight( 0xffffbb, 0x080820, 1 );
+    scene.add(hLight);
     const lightAmbient = new THREE.AmbientLight('#ffffff', 0.9);
     scene.add(lightAmbient);
 
